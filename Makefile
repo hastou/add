@@ -119,7 +119,10 @@ help: .help-post
 .help-post: .help-impl
 # Add your post 'help' code here...
 
-
+install: dist/Release/GNU-Linux/add
+	cp dist/Release/GNU-Linux/add /bin
+uninstall:
+	rm /bin/add
 
 # include project implementation makefile
 include nbproject/Makefile-impl.mk
